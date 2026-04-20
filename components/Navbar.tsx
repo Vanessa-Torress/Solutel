@@ -25,8 +25,8 @@ const Logo = ({ isScrolled }: { isScrolled: boolean }) => {
   };
 
   return (
-    <Link href="/#inicio" onClick={handleClick} className={`relative flex-shrink-0 flex items-center justify-center mix-blend-screen transition-all duration-300 hover:scale-105 ${isScrolled ? 'h-9' : 'h-14'}`}>
-      <Image src="/logo.jpg" alt={`${siteConfig.name} Logo`} width={400} height={400} className="w-auto h-full object-contain" priority />
+    <Link href="/#inicio" onClick={handleClick} className={`relative flex-shrink-0 flex items-center justify-center transition-all duration-300 hover:scale-105 ${isScrolled ? 'h-9' : 'h-14'}`}>
+      <Image src="/logo.png" alt={`${siteConfig.name} Logo`} width={400} height={400} className="w-auto h-full object-contain" priority />
     </Link>
   );
 };
@@ -47,7 +47,7 @@ const NavItem = ({ label, href, onClick }: NavItemProps) => {
     <Link
       href={resolveHref}
       onClick={handleClick}
-      className="text-sm font-medium text-white transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
+      className="text-base font-medium text-white transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
     >
       {label}
     </Link>
@@ -84,7 +84,7 @@ const Navbar = () => {
         <div className="hidden md:flex flex-shrink-0 items-center gap-4 z-50">
           <Link
             href="/trabalhe-conosco"
-            className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow-box"
+            className="rounded-lg bg-primary px-5 py-2 text-base font-semibold text-primary-foreground transition-all hover:opacity-90 glow-box"
           >
              Trabalhe Conosco
           </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
               <Link
                 href="/trabalhe-conosco"
                 onClick={() => setOpen(false)}
-                className="rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground mt-2 glow-box"
+                className="rounded-lg bg-primary px-5 py-2.5 text-center text-base font-semibold text-primary-foreground mt-2 glow-box"
               >
                 Trabalhe Conosco
               </Link>

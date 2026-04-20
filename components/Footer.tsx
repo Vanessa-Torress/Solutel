@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="container px-6 md:px-12 lg:px-20">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-center md:items-start gap-4">
-            <Link href="/#inicio" className="relative flex-shrink-0 flex items-center justify-center mix-blend-screen transition-transform hover:scale-105 h-16">
-              <Image src="/logo.jpg" alt={`${siteConfig.name} Logo`} width={400} height={400} className="w-auto h-full object-contain" />
+            <Link href="/#inicio" className="relative flex-shrink-0 flex items-center justify-center transition-transform hover:scale-105 h-16">
+              <Image src="/logo.png" alt={`${siteConfig.name} Logo`} width={400} height={400} className="w-auto h-full object-contain" />
             </Link>
             <p className="text-sm text-white/60">
               © {currentYear} {siteConfig.name} — Todos os direitos reservados.
